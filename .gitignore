@@ -1,0 +1,5 @@
+# eclipse
+.project
+*.log
+*.md.html
+config/slaves
