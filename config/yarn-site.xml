@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<configuration>
+	<!--
+	  Pseudo-Distributed Mode + YARN Setup.
+	-->
+    <property>
+       <name>yarn.nodemanager.aux-services</name>
+       <value>mapreduce_shuffle</value>
+    </property>
+    <property>
+       <name>yarn.nodemanager.aux-services.mapreduce.shuffle.class</name>
+       <value>org.apache.hadoop.mapred.ShuffleHandler</value>
+    </property>
+	<!--
+	  Fully-Distributed Mode + YARN Setup.
+	-->
+    <property>
+        <name>yarn.resourcemanager.hostname</name>
+        <value>testbed-master</value>
+    </property>
+</configuration>
